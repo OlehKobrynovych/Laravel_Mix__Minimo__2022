@@ -1,0 +1,74 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Playfair Display', serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+@media (min-width: 370px) {
+  .container {
+    padding: 0 15px;
+  }
+  .container2 {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    padding: 0 30px;
+  }
+  .container2 {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+  .container2 {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 922px) {
+  .container {
+    padding: 0 70px;
+  }
+  .container2 {
+    padding: 0 150px;
+  }
+}

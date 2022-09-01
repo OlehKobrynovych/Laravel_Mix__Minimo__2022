@@ -1,0 +1,77 @@
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 105px;
+}
+
+.sign-up__title {
+  @include PlayfairDisplay30px400;
+  letter-spacing: 1px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sign-up__mail-wrap {
+  position: relative;
+  width: 80%;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+}
+
+.sign-up__mail {
+  position: relative;
+  width: 100%;
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+}
+
+.sign-up__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 370px) {
+
+}
+
+
+@media (min-width: 576px) {
+  .sign-up {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .sign-up__mail-wrap {
+    width: 55%;
+  }
+
+  .sign-up__title {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sign-up__mail-wrap {
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sign-up {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .sign-up__title {
+    margin-bottom: 85px;
+  }
+}

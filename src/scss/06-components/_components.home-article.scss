@@ -1,0 +1,66 @@
+.home-article {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.home-article__photodiary-link {
+  @include Ubuntu14px300;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-bottom: 30px;
+  transition: .5s;
+}
+
+.home-article__photodiary-link:hover {
+  color: #626262;
+  scale: 1.2;
+}
+
+.home-article__text-wrap {
+}
+
+.home-article__title {
+  @include PlayfairDisplay30px400;
+  color: #626262;
+  margin-bottom: 15px;
+}
+
+.home-article__text {
+  @include PlayfairDisplay14px400;
+  color: #626262;
+  margin-bottom: 55px;
+}
+
+.home-article__comment-link {
+  @include Ubuntu14px300;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  transition: .5s;
+}
+
+.home-article__comment-link:hover {
+  color: #626262;
+  scale: 1.2;
+}
+
+@media (min-width: 370px) {
+}
+
+@media (min-width: 576px) {
+  .home-article__title {
+    margin-bottom: 45px;
+  }
+
+  .home-article {
+    margin-bottom: 132px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-article {
+    margin-top: 100px;
+    margin-bottom: 130px;
+  }
+}

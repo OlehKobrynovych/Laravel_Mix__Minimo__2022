@@ -1,0 +1,102 @@
+.c-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.c-navbar__brand {
+  font-size: 30px;
+  letter-spacing: 6px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Inconsolata";
+  text-align: center;
+}
+
+.c-navbar__items-wrap {
+}
+
+.c-navbar__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-navbar__item {
+  position: relative;
+  transition: 1s;
+}
+
+.c-navbar__item::before {
+  content: '';
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: #626262;
+  transition: width .3s ease-in;
+}
+
+.c-navbar__item:hover::before,
+.c-navbar__item:focus::before {
+    width: 100%;
+}
+
+.c-navbar__item:hover {
+  scale: 1.2;
+}
+
+.c-navbar__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.c-navbar__item-link {
+  @include PlayfairDisplay14px400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #626262;
+}
+
+@media (min-width: 370px) {
+
+  .c-navbar__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  .c-navbar {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  .c-navbar__items {
+    justify-content: inherit;
+    margin-left: 20px;
+  }
+
+  .c-navbar__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-navbar__item:not(:last-child) {
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-navbar {
+    flex-direction: row;
+    margin-top: 70px;
+  }
+
+  .c-navbar__item:not(:last-child) {
+    margin-right: 120px;
+  }
+}

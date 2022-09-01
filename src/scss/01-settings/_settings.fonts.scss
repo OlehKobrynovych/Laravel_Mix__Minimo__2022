@@ -1,0 +1,21 @@
+/* ==========================================================================
+   #FONTS-VARIABLES
+   ========================================================================== */
+
+@mixin PlayfairDisplay14px400 {
+   font-size: 14px;
+   font-weight: 400;
+   font-family: "Playfair Display";
+}
+@mixin PlayfairDisplay30px400 {
+   font-size: 30px;
+   font-weight: 400;
+   font-family: "Playfair Display";
+}
+
+@mixin Ubuntu14px300 {
+   font-size: 14px;
+   font-weight: 300;
+   font-family: "Ubuntu";
+}
+

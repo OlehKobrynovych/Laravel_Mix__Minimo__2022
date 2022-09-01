@@ -1,0 +1,22 @@
+.more-btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px
+}
+
+.more-btn {
+  @include PlayfairDisplay14px400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  display: inline-block;
+  background: inherit;
+  border: 1px solid #626262;
+  padding: 13px 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.more-btn:hover {
+  scale: 1.2;
+}

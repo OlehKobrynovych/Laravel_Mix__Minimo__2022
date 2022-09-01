@@ -1,0 +1,44 @@
+.footer {
+  background-color: #f0f0f0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__privacy-wrap {
+}
+
+.footer__privacy {
+  @include PlayfairDisplay14px400;
+  display: inline-block;
+  line-height: 24px;
+  color: #000000;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.footer__privacy:hover {
+  scale: 1.2;
+}
+
+.footer__follow-wrap {
+  display: flex;
+}
+
+.footer__follow-title {
+  font-family: "Playfair Display";
+  line-height: 24px;
+  color: #000000;
+}
+
+.footer__follow {
+  margin-left: 22px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.footer__follow:hover {
+  scale: 1.2;
+}
