@@ -37,8 +37,10 @@ Project uses:
 * Css
 * Scss
 * Js
+* Swiper
 * Image
 * Fonts
 * Laravel_Mix
 * ejs
+* ITCSS
 * ...
