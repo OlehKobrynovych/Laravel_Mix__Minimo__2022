@@ -1,4 +1,4 @@
-.footer {
+.c-footer {
   background-color: #f0f0f0;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -6,10 +6,10 @@
   justify-content: space-between;
 }
 
-.footer__privacy-wrap {
+.c-footer__privacy-wrap {
 }
 
-.footer__privacy {
+.c-footer__privacy {
   @include PlayfairDisplay14px400;
   display: inline-block;
   line-height: 24px;
@@ -19,26 +19,42 @@
   transition: .5s;
 }
 
-.footer__privacy:hover {
+.c-footer__privacy::before {
+  content: '';
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: #626262;
+  transition: width .3s ease-in;
+}
+
+.c-footer__privacy:hover::before,
+.c-footer__privacy:focus::before {
+    width: 100%;
+}
+
+.c-footer__privacy:hover {
   scale: 1.2;
 }
 
-.footer__follow-wrap {
+.c-footer__follow-wrap {
   display: flex;
 }
 
-.footer__follow-title {
-  font-family: "Playfair Display";
+.c-footer__follow-title {
+  @include PlayfairDisplay14px400;
   line-height: 24px;
   color: #000000;
 }
 
-.footer__follow {
+.c-footer__follow {
   margin-left: 22px;
   cursor: pointer;
   transition: .5s;
 }
 
-.footer__follow:hover {
+.c-footer__follow:hover {
   scale: 1.2;
 }

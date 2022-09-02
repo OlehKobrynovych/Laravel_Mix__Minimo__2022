@@ -1,7 +1,8 @@
 # Laravel_Mix
 
-Laravel_Mix ...
+Demonstration project for advanced training. Laravel_Mix ...
 
+See live  https://olehkobrynovych.github.io/Laravel_Mix__Minimo__2022/
 
 ## Table of contents
 * [Instructions](#Instructions)
@@ -13,29 +14,22 @@ Laravel_Mix ...
 
 First clone this repository.
 ```bash
-$ git clone https://github.com/IgorKob/Laravel_Mix.git
+$ git clone https://github.com/OlehKobrynovych/React_Mozgi_Animation.git
 ```
 
 Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
-
 ```bash
 $ npm install # or yarn
 ```
 
 Run it
-./dist - (html, css, scss, js, img, fonts, watch)
 ```bash
-$ npm run watch
-```
-
-./dist
-```bash
-$ npm run prod
+$ npm start # or yarn start
 ```
 
 
 ## Description
-This is a simple app using public [`laravel-mix`](https://laravel-mix.com/docs/6.0/installation).
+Demonstration project for advanced training. [`laravel-mix`](https://laravel-mix.com/docs/6.0/installation).
 
 ## Technologies
 Project uses:
