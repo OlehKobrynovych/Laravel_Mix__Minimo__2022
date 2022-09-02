@@ -14,6 +14,7 @@
   font-weight: 400;
   font-family: "Inconsolata";
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .c-navbar__items-wrap {
@@ -37,7 +38,7 @@
   height: 0.2em;
   position: absolute;
   bottom: 0;
-  background-color: #626262;
+  background-color: $color-dark;
   transition: width .3s ease-in;
 }
 
@@ -51,20 +52,20 @@
 }
 
 .c-navbar__item:not(:last-child) {
-  margin-right: 30px;
+  // margin-right: 20px;
 }
 
 .c-navbar__item-link {
   @include PlayfairDisplay14px400;
   text-align: center;
   text-transform: uppercase;
-  color: #626262;
+  color: $color-dark;
 }
 
 @media (min-width: 370px) {
 
   .c-navbar__item:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
   }
 }
 

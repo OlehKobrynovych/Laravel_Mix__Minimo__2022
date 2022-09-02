@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f0f0f0;
+  background-color: $color-bg;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 105px;
@@ -27,7 +27,7 @@
 .c-sign-up__mail {
   position: relative;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: $color-bg;
   border: none;
   outline: none;
 }
