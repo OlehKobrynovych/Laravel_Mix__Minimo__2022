@@ -2,7 +2,10 @@
     "/js/app.js": "/js/app.js",
     "/css/main.css": "/css/main.css",
     "/images/arrow.png": "/images/arrow.png",
+    "/images/facebook-fill.svg": "/images/facebook-fill.svg",
+    "/images/facebook.png": "/images/facebook.png",
     "/images/favicon.ico": "/images/favicon.ico",
+    "/images/instagram-line.svg": "/images/instagram-line.svg",
     "/images/logistic-logo.svg": "/images/logistic-logo.svg",
     "/images/m1.jpg": "/images/m1.jpg",
     "/images/m2.jpg": "/images/m2.jpg",
@@ -12,6 +15,7 @@
     "/images/m6.jpg": "/images/m6.jpg",
     "/images/pexels-photo-208745.jpeg": "/images/pexels-photo-208745.jpeg",
     "/images/slider1.png": "/images/slider1.png",
+    "/images/twitter-fill.svg": "/images/twitter-fill.svg",
     "/fonts/Playfair_Display/OFL.txt": "/fonts/Playfair_Display/OFL.txt",
     "/fonts/Playfair_Display/PlayfairDisplay-Black.ttf": "/fonts/Playfair_Display/PlayfairDisplay-Black.ttf",
     "/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf": "/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf",
@@ -28,9 +32,5 @@
     "/fonts/Ubuntu/Ubuntu-Medium.ttf": "/fonts/Ubuntu/Ubuntu-Medium.ttf",
     "/fonts/Ubuntu/Ubuntu-MediumItalic.ttf": "/fonts/Ubuntu/Ubuntu-MediumItalic.ttf",
     "/fonts/Ubuntu/Ubuntu-Regular.ttf": "/fonts/Ubuntu/Ubuntu-Regular.ttf",
-    "/fonts/Ubuntu/UFL.txt": "/fonts/Ubuntu/UFL.txt",
-    "/images/facebook.png": "/images/facebook.png",
-    "/images/facebook-fill.svg": "/images/facebook-fill.svg",
-    "/images/instagram-line.svg": "/images/instagram-line.svg",
-    "/images/twitter-fill.svg": "/images/twitter-fill.svg"
+    "/fonts/Ubuntu/UFL.txt": "/fonts/Ubuntu/UFL.txt"
 }
