@@ -48,11 +48,16 @@ mix.webpackConfig({
             filename: "index.html",         
             inject: false,
         }),
-        // new HtmlWebpackPlugin({
-        //     template: "ejs-compiled-loader!./src/index2.ejs",
-        //     filename: "index2.html",
-        //     inject: false
-        // })
+        new HtmlWebpackPlugin({
+            template: "ejs-compiled-loader!./src/photodiary.ejs",
+            filename: "photodiary.html",
+            inject: false
+        }),
+        new HtmlWebpackPlugin({
+            template: "ejs-compiled-loader!./src/music.ejs",
+            filename: "music.html",
+            inject: false
+        })
     ],
     devServer: {
         // hot: true, inline: true, contentBase: __dirname

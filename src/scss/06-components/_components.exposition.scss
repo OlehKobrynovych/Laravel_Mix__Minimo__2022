@@ -1,0 +1,59 @@
+.c-exposition-wrap {
+  background-color: $color-bg;
+  padding-top: 70px;
+  padding-bottom: 93px;
+}
+
+.c-exposition__link {
+  display: inline-block;
+  @include Ubuntu14px300;
+  text-transform: uppercase;
+  color: $color-grey;
+  margin-bottom: 40px;
+  transition: .5s;
+}
+
+.c-exposition__link:hover {
+  scale: 1.2;
+}
+
+.c-exposition__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-exposition__card {
+  width: 100%;
+}
+
+.c-exposition__card img {
+  width: 100%;
+}
+
+.c-exposition__cards-img {
+}
+
+.c-exposition__card-text {
+  display: inline-block;
+  @include PlayfairDisplay30px400;
+  margin-top: 15px;
+  font-size: 20px;
+  color: $color-dark;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .c-exposition__cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .c-exposition__card {
+    width: 30%;
+  }
+
+  .c-exposition__card-text {
+    margin-top: 27px;
+  }
+}

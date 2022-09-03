@@ -1,21 +1,113 @@
-/* ==========================================================================
-   #FONTS-VARIABLES
-   ========================================================================== */
-
-@mixin PlayfairDisplay14px400 {
-   font-size: 14px;
-   font-weight: 400;
-   font-family: "Playfair Display";
-}
-@mixin PlayfairDisplay30px400 {
-   font-size: 30px;
-   font-weight: 400;
-   font-family: "Playfair Display";
-}
-
-@mixin Ubuntu14px300 {
-   font-size: 14px;
-   font-weight: 300;
-   font-family: "Ubuntu";
-}
-
+/* PlayfairDisplay */
+@font-face { 
+   font-family: 'PlayfairDisplay'; 
+   src: url('/fonts/Playfair_Display/PlayfairDisplay-Black.ttf'); 
+   font-weight: 900; 
+   font-style: normal; 
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'PlayfairDisplay'; 
+   src: url('/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf'); 
+   font-weight: 900; 
+   font-style: italic;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'PlayfairDisplay'; 
+   src: url('/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf'); 
+   font-weight: Bold; 
+   font-style: normal;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'PlayfairDisplay'; 
+   src: url('/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf'); 
+   font-weight: Bold; 
+   font-style: italic;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'PlayfairDisplay'; 
+   src: url('/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf'); 
+   font-weight: 400; 
+   font-style: italic;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'PlayfairDisplay'; 
+   src: url('/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf'); 
+   font-weight: 400; 
+   font-style: normal;
+   font-display: swap; 
+ }
+ 
+ /* Ubuntu */
+ @font-face { 
+   font-family: 'Ubuntu'; 
+   src: url('/fonts/Ubuntu/Ubuntu-Bold.ttf'); 
+   font-weight: Bold; 
+   font-style: normal;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'Ubuntu'; 
+   src: url('/fonts/Ubuntu/Ubuntu-BoldItalic.ttf'); 
+   font-weight: Bold; 
+   font-style: italic;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'Ubuntu'; 
+   src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf'); 
+   font-weight: 400; 
+   font-style: normal;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'Ubuntu'; 
+   src: url('/fonts/Ubuntu/Ubuntu-Italic.ttf'); 
+   font-weight: 400; 
+   font-style: italic;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'Ubuntu'; 
+   src: url('/fonts/Ubuntu/Ubuntu-Light.ttf'); 
+   font-weight: 300; 
+   font-style: normal;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'Ubuntu'; 
+   src: url('/fonts/Ubuntu/Ubuntu-LightItalic.ttf'); 
+   font-weight: 300; 
+   font-style: italic;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'Ubuntu'; 
+   src: url('/fonts/Ubuntu/Ubuntu-Medium.ttf'); 
+   font-weight: 500; 
+   font-style: normal;
+   font-display: swap; 
+ }
+ 
+ @font-face { 
+   font-family: 'Ubuntu'; 
+   src: url('/fonts/Ubuntu/Ubuntu-MediumItalic.ttf'); 
+   font-weight: 500; 
+   font-style: italic;
+   font-display: swap; 
+ }

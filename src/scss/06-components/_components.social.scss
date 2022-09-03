@@ -1,0 +1,45 @@
+.c-social-wrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 68px 0;
+}
+
+.c-social__title {
+  @include Ubuntu14px300;
+  color: $color-grey;
+  margin-right: 29px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.c-social__link {
+  width: 21px;
+  height: 21px;
+  margin-left: 20px;
+  opacity: .3;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.c-social__link:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+
+.c-more-btn {
+  @include PlayfairDisplay14px400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-dark;
+  display: inline-block;
+  background: inherit;
+  border: 1px solid $color-dark;
+  padding: 13px 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.c-more-btn:hover {
+  scale: 1.2;
+}

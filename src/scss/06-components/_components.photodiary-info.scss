@@ -1,0 +1,66 @@
+.c-photodiary-info {
+  margin-bottom: 68px;
+}
+
+.c-photodiary-info__img-main {
+}
+
+.c-photodiary-info__link {
+  @include Ubuntu14px300;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $color-grey;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  transition: .5s;
+}
+
+.c-photodiary-info__link::before {
+  content: '';
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: $color-dark;
+  transition: width .3s ease-in;
+}
+
+.c-photodiary-info__link:hover::before,
+.c-photodiary-info__link:focus::before {
+    width: 100%;
+}
+
+.c-photodiary-info__link:hover {
+  scale: 1.2;
+}
+
+.c-photodiary-info__title {
+  @include PlayfairDisplay30px400;
+  color: $color-dark;
+  margin-bottom: 15px;
+}
+
+.c-photodiary-info__text {
+  @include PlayfairDisplay14px400;
+  color: $color-dark;
+}
+
+.c-photodiary-info__img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.c-photodiary-info__sub-text {
+  @include PlayfairDisplay14px400;
+  color: $color-dark;
+  line-height: 24px;
+  font-style: italic;
+  margin-bottom: 38px;
+}
+
+@media (min-width: 576px) {
+  .c-photodiary-info__title {
+    margin-bottom: 45px;
+  }
+}

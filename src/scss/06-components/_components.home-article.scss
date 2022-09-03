@@ -7,7 +7,7 @@
   @include Ubuntu14px300;
   display: inline-block;
   text-transform: uppercase;
-  color: #b4ad9e;
+  color: $color-grey;
   margin-bottom: 30px;
   transition: .5s;
 }
@@ -19,7 +19,7 @@
   height: 0.2em;
   position: absolute;
   bottom: 0;
-  background-color: #626262;
+  background-color: $color-dark;
   transition: width .3s ease-in;
 }
 
@@ -37,13 +37,13 @@
 
 .c-home-article__title {
   @include PlayfairDisplay30px400;
-  color: #626262;
+  color: $color-dark;
   margin-bottom: 15px;
 }
 
 .c-home-article__text {
   @include PlayfairDisplay14px400;
-  color: #626262;
+  color: $color-dark;
   margin-bottom: 55px;
 }
 
@@ -51,7 +51,7 @@
   @include Ubuntu14px300;
   display: inline-block;
   text-transform: uppercase;
-  color: #b4ad9e;
+  color: $color-grey;
   transition: .5s;
 }
 
@@ -62,7 +62,7 @@
   height: 0.2em;
   position: absolute;
   bottom: 0;
-  background-color: #626262;
+  background-color: $color-dark;
   transition: width .3s ease-in;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .c-home-article__comment-link:hover {
-  color: #626262;
+  color: $color-dark;
   scale: 1.2;
 }
 
