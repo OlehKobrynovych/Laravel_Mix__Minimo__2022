@@ -17,6 +17,11 @@ body {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
 * a {
   text-decoration: none;
 }
@@ -32,7 +37,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  overflow: hidden;
 }
 
 .container2 {
@@ -40,7 +44,14 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.hidden {
   overflow: hidden;
+}
+
+.text-italic {
+  font-style: italic;
 }
 
 @media (min-width: 370px) {
@@ -75,9 +86,106 @@ body {
     padding: 0 150px;
   }
 }
-/* ==========================================================================
-   #FONTS-VARIABLES
-   ========================================================================== */
+/* PlayfairDisplay */
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
+  font-weight: Bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf");
+  font-weight: Bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* Ubuntu */
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu/Ubuntu-Bold.ttf");
+  font-weight: Bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu/Ubuntu-BoldItalic.ttf");
+  font-weight: Bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu/Ubuntu-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu/Ubuntu-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu/Ubuntu-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu/Ubuntu-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu/Ubuntu-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu/Ubuntu-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
 .c-navbar {
   display: flex;
   flex-direction: column;
@@ -94,6 +202,7 @@ body {
   font-weight: 400;
   font-family: "Inconsolata";
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .c-navbar__items {
@@ -127,10 +236,6 @@ body {
   scale: 1.2;
 }
 
-.c-navbar__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .c-navbar__item-link {
   font-size: 14px;
   font-weight: 400;
@@ -140,11 +245,6 @@ body {
   color: #626262;
 }
 
-@media (min-width: 370px) {
-  .c-navbar__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
 @media (min-width: 576px) {
   .c-navbar {
     flex-direction: row;
@@ -481,6 +581,494 @@ body {
   scale: 1.2;
 }
 
+.c-photodiary-info {
+  margin-bottom: 68px;
+}
+
+.c-photodiary-info__link {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  display: inline-block;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+
+.c-photodiary-info__link::before {
+  content: "";
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: #626262;
+  transition: width 0.3s ease-in;
+}
+
+.c-photodiary-info__link:hover::before,
+.c-photodiary-info__link:focus::before {
+  width: 100%;
+}
+
+.c-photodiary-info__link:hover {
+  scale: 1.2;
+}
+
+.c-photodiary-info__title {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+  margin-bottom: 15px;
+}
+
+.c-photodiary-info__text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+}
+
+.c-photodiary-info__img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.c-photodiary-info__sub-text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+  line-height: 24px;
+  font-style: italic;
+  margin-bottom: 38px;
+}
+
+@media (min-width: 576px) {
+  .c-photodiary-info__title {
+    margin-bottom: 45px;
+  }
+}
+.c-social-wrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 68px 0;
+}
+
+.c-social__title {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  color: #b4ad9e;
+  margin-right: 29px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.c-social__link {
+  width: 21px;
+  height: 21px;
+  margin-left: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.c-social__link:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+
+.c-more-btn {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  display: inline-block;
+  background: inherit;
+  border: 1px solid #626262;
+  padding: 13px 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.c-more-btn:hover {
+  scale: 1.2;
+}
+
+.c-exposition-wrap {
+  background-color: #f0f0f0;
+  padding-top: 70px;
+  padding-bottom: 93px;
+}
+
+.c-exposition__link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-bottom: 40px;
+  transition: 0.5s;
+}
+
+.c-exposition__link:hover {
+  scale: 1.2;
+}
+
+.c-exposition__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-exposition__card {
+  width: 100%;
+}
+
+.c-exposition__card img {
+  width: 100%;
+}
+
+.c-exposition__card-text {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  margin-top: 15px;
+  font-size: 20px;
+  color: #626262;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .c-exposition__cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .c-exposition__card {
+    width: 30%;
+  }
+  .c-exposition__card-text {
+    margin-top: 27px;
+  }
+}
+.c-comments-wrap {
+  padding-top: 67px;
+  padding-bottom: 100px;
+}
+
+.c-comments__title {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  color: #b4ad9e;
+  margin-right: 29px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.c-comments__card {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.c-comments__card-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.c-comments__card-title {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.c-comments__card-text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.c-comments__card-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  color: #b4ad9e;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.c-comments__card-link:hover {
+  scale: 1.2;
+}
+
+.c-comments__input-wrap {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.c-comments__input-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 40px;
+  opacity: 0.5;
+}
+
+.c-comments__input {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  padding: 25px 40px;
+  border-radius: 4px;
+}
+
+.c-comments__input::-moz-placeholder {
+  color: #c8c8c8;
+}
+
+.c-comments__input::placeholder {
+  color: #c8c8c8;
+}
+
+.c-comments__connected {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.c-comments__connected-title {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  color: #b4ad9e;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+
+.c-comments__connected-link {
+  margin-left: 15px;
+  opacity: 0.4;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.c-comments__connected-link:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+
+.c-music-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+
+.c-music-info-wrap {
+  display: inline-block;
+  width: 100%;
+}
+
+.c-music-info__link {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  display: inline-block;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+
+.c-music-info__link::before {
+  content: "";
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: #626262;
+  transition: width 0.3s ease-in;
+}
+
+.c-music-info__link:hover::before,
+.c-music-info__link:focus::before {
+  width: 100%;
+}
+
+.c-music-info__link:hover {
+  scale: 1.2;
+}
+
+.c-music-info__title {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+  margin-bottom: 15px;
+}
+
+.c-music-info__text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+}
+
+.c-music-info__img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.c-music-info__sub-text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+  line-height: 24px;
+  font-style: italic;
+  margin-bottom: 38px;
+}
+
+.c-music-info-sidebar-wrap {
+  display: none;
+}
+
+.c-music-info-sidebar {
+  position: sticky;
+  top: -90px;
+  width: 100%;
+}
+
+.c-music-info-sidebar__img {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.c-music-info-sidebar__title {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+  font-size: 24px;
+  line-height: 20px;
+  margin-top: 30px;
+}
+
+.c-music-info-sidebar__text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #626262;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.c-music-info-sidebar__link {
+  margin-top: 25px;
+  margin-right: 15px;
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.c-music-info-sidebar__link:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+
+.c-music-info-sidebar__post-wrap {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-top: 72px;
+}
+
+.c-music-info-sidebar__post {
+  margin-top: 30px;
+}
+
+.c-music-info-sidebar__post-title::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #b4ad9e;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.c-music-info-sidebar__post-title {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  position: relative;
+  color: #626262;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.c-music-info-sidebar__sub-img {
+  width: 100%;
+  margin-top: 50px;
+  opacity: 0.4;
+}
+
+.c-music-info-sidebar__post-count {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+@media (min-width: 576px) {
+  .c-music-info {
+    gap: 20px;
+  }
+  .c-music-info-wrap {
+    width: 76%;
+  }
+  .c-music-info__title {
+    margin-bottom: 45px;
+  }
+  .c-music-info-sidebar-wrap {
+    display: inline-block;
+    width: 30%;
+  }
+}
+@media (min-width: 768px) {
+  .c-music-info {
+    gap: 40px;
+  }
+}
 .c-footer {
   background-color: #f0f0f0;
   padding-top: 40px;
@@ -536,9 +1124,11 @@ body {
 .c-footer__follow {
   margin-left: 22px;
   cursor: pointer;
+  opacity: 0.3;
   transition: 0.5s;
 }
 
 .c-footer__follow:hover {
+  opacity: 1;
   scale: 1.2;
 }
