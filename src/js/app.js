@@ -1,3 +1,1 @@
-import './modules/test';
-
-// alert('hello world');  
+import './modules/swiper';

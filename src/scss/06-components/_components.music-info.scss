@@ -7,9 +7,7 @@
 
 .c-music-info-wrap {
   display: inline-block;
-  margin-left: 70px;
-  margin-right: 50px;
-  width: 76%
+  width: 100%
 }
 
 .c-music-info__img-main {
@@ -70,8 +68,7 @@
 }
 
 .c-music-info-sidebar-wrap {
-  display: inline-block;
-  width: 30%;
+  display: none;
 }
 
 .c-music-info-sidebar {
@@ -157,7 +154,6 @@
   opacity: .4;
 }
 
-
 .c-music-info-sidebar__post-count {
   @include Ubuntu14px300;
   text-transform: uppercase;
@@ -167,12 +163,27 @@
 }
 
 @media (min-width: 576px) {
+
+  .c-music-info {
+    gap: 20px;
+  }
+
+  .c-music-info-wrap {
+    width: 76%
+  }
+
   .c-music-info__title {
     margin-bottom: 45px;
+  }
+
+  .c-music-info-sidebar-wrap {
+    display: inline-block;
+    width: 30%;
   }
 }
 
 @media (min-width: 768px) {
   .c-music-info{
+    gap: 40px;
   }
 }

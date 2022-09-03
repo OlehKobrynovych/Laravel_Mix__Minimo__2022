@@ -2,9 +2,6 @@
   background-color: $color-bg;
   padding-top: 70px;
   padding-bottom: 93px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 }
 
 .c-exposition__link {
@@ -24,7 +21,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-between;
 }
 
 .c-exposition__card {
@@ -36,7 +32,6 @@
 }
 
 .c-exposition__cards-img {
-
 }
 
 .c-exposition__card-text {
@@ -61,12 +56,4 @@
   .c-exposition__card-text {
     margin-top: 27px;
   }
-}
-
-@media (min-width: 768px) {
- 
-}
-
-@media (min-width: 992px) {
-
 }

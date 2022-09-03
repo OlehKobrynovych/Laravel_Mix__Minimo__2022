@@ -44,8 +44,8 @@ mix.webpackConfig({
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "ejs-compiled-loader!./src/lifestyle.ejs",
-            filename: "lifestyle.html",         
+            template: "ejs-compiled-loader!./src/index.ejs",
+            filename: "index.html",         
             inject: false,
         }),
         new HtmlWebpackPlugin({
