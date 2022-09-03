@@ -1,0 +1,105 @@
+.c-comments-wrap {
+  padding-top: 67px;
+  padding-bottom: 100px;
+  // display: flex;
+  // justify-content: end;
+  // align-items: center;
+  // margin: 68px 0;
+}
+
+.c-comments__title {
+  @include Ubuntu14px300;
+  color: $color-grey;
+  margin-right: 29px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+
+.c-comments__card {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.c-comments__card-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.c-comments__card-title {
+  @include PlayfairDisplay14px400;
+  color: $color-dark;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.c-comments__card-text {
+  @include PlayfairDisplay14px400;
+  color: $color-dark;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.c-comments__card-link {
+  display: inline-block;
+  @include Ubuntu14px300;
+  color: $color-grey;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.c-comments__card-link:hover {
+  scale: 1.2;
+}
+
+.c-comments__input-wrap {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.c-comments__input-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 40px;
+  opacity: .5;
+}
+
+.c-comments__input {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  padding: 25px 40px;
+  border-radius: 4px;
+}
+
+.c-comments__input::placeholder {
+  color: #c8c8c8;
+}
+
+.c-comments__connected {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.c-comments__connected-title {
+  @include Ubuntu14px300;
+  color: $color-grey;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+
+.c-comments__connected-link {
+  margin-left: 15px;
+  opacity: .4;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.c-comments__connected-link:hover {
+  opacity: 1;
+  scale: 1.2;
+}

@@ -44,15 +44,20 @@ mix.webpackConfig({
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "ejs-compiled-loader!./src/index.ejs",
-            filename: "index.html",         
+            template: "ejs-compiled-loader!./src/lifestyle.ejs",
+            filename: "lifestyle.html",         
             inject: false,
         }),
-        // new HtmlWebpackPlugin({
-        //     template: "ejs-compiled-loader!./src/index2.ejs",
-        //     filename: "index2.html",
-        //     inject: false
-        // })
+        new HtmlWebpackPlugin({
+            template: "ejs-compiled-loader!./src/photodiary.ejs",
+            filename: "photodiary.html",
+            inject: false
+        }),
+        new HtmlWebpackPlugin({
+            template: "ejs-compiled-loader!./src/music.ejs",
+            filename: "music.html",
+            inject: false
+        })
     ],
     devServer: {
         // hot: true, inline: true, contentBase: __dirname

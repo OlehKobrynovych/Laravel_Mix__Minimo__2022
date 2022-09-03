@@ -1,0 +1,94 @@
+.c-music-info {
+  display: flex;
+  justify-content: space-between;
+  // margin-top: 55px;
+  margin-bottom: 68px;
+}
+
+.c-music-info-sidebar {
+  position: sticky;
+  top: 10px;
+  width: 280px;
+  height: 500px;
+  background-color: red;
+}
+.c-music-info-sidebar2 {
+  width: 280px;
+  height: 500px;
+  background-color: rgb(0, 0, 255);
+}
+
+.c-music-info-wrap {
+  margin-left: 70px;
+  margin-right: 50px;
+  width: 68%
+}
+
+.c-music-info__img-main {
+}
+
+.c-music-info__link {
+  @include Ubuntu14px300;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $color-grey;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  transition: .5s;
+}
+
+.c-music-info__link::before {
+  content: '';
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: $color-dark;
+  transition: width .3s ease-in;
+}
+
+.c-music-info__link:hover::before,
+.c-music-info__link:focus::before {
+    width: 100%;
+}
+
+.c-music-info__link:hover {
+  scale: 1.2;
+}
+
+.c-music-info__title {
+  @include PlayfairDisplay30px400;
+  color: $color-dark;
+  margin-bottom: 15px;
+}
+
+.c-music-info__text {
+  @include PlayfairDisplay14px400;
+  color: $color-dark;
+}
+
+.c-music-info__img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.c-music-info__sub-text {
+  @include PlayfairDisplay14px400;
+  color: $color-dark;
+  line-height: 24px;
+  font-style: italic;
+  margin-bottom: 38px;
+}
+
+@media (min-width: 576px) {
+  .c-music-info__title {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-music-info{
+    // margin-top: 100px;
+  }
+}
